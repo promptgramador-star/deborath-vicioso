@@ -4,9 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deborath Vicioso | Artista Profesional</title>
+    <title>Deborath Vicioso | Artista Profesional - Cantante para Eventos</title>
     <meta name="description"
-        content="Portafolio artístico de Deborath Vicioso. Cantante e intérprete con show en vivo para eventos corporativos y privados.">
+        content="Portafolio artístico de Deborath Vicioso. Cantante profesional e intérprete con show en vivo de alta calidad para eventos corporativos, bodas y fiestas privadas en República Dominicana e internacional.">
+    <link rel="canonical" href="https://deborathvicioso.com/">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://deborathvicioso.com/">
+    <meta property="og:title" content="Deborath Vicioso | Artista Profesional - Cantante para Eventos">
+    <meta property="og:description"
+        content="Portafolio artístico de Deborath Vicioso. Cantante profesional e intérprete con show en vivo de alta calidad para eventos corporativos, bodas y fiestas privadas.">
+    <meta property="og:image" content="https://deborathvicioso.com/IMG/banner.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://deborathvicioso.com/">
+    <meta property="twitter:title" content="Deborath Vicioso | Artista Profesional - Cantante para Eventos">
+    <meta property="twitter:description"
+        content="Portafolio artístico de Deborath Vicioso. Cantante profesional e intérprete con show en vivo de alta calidad para eventos corporativos, bodas y fiestas privadas.">
+    <meta property="twitter:image" content="https://deborathvicioso.com/IMG/banner.jpeg">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Deborath Vicioso",
+      "url": "https://deborathvicioso.com",
+      "image": "https://deborathvicioso.com/IMG/banner.jpeg",
+      "jobTitle": "Cantante Profesional",
+      "description": "Cantante e intérprete con show en vivo para eventos corporativos y privados.",
+      "sameAs": [
+        "https://www.instagram.com/deborathvicioso",
+        "https://www.facebook.com/deborathvicioso",
+         "https://www.youtube.com/@DeborathVicioso"
+      ]
+    }
+    </script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -563,6 +600,96 @@
             }
         }
 
+        /* CAROUSEL */
+        .carousel-container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            height: 600px;
+            /* Portrait friendly height */
+            object-fit: cover;
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+            border: none;
+            padding: 1rem;
+            cursor: pointer;
+            font-size: 1.5rem;
+            z-index: 10;
+            transition: background 0.3s;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .carousel-btn:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .prev {
+            left: 20px;
+        }
+
+        .next {
+            right: 20px;
+        }
+
+        .carousel-indicators {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 10;
+        }
+
+        .indicator {
+            width: 12px;
+            height: 12px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .indicator:hover {
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        .indicator.active {
+            background: var(--color-white);
+            border-color: var(--color-gold);
+            transform: scale(1.2);
+        }
+
+        @media (max-width: 768px) {
+            .carousel-slide {
+                height: 400px;
+            }
+        }
+
         /* RESPONSIVE */
         @media (max-width: 768px) {
             .header-title {
@@ -683,16 +810,21 @@
         <div class="container">
             <h2 class="section-title">Galería</h2>
             <div class="section-separator"></div>
-            <div class="gallery-grid">
-                <div class="gallery-item"><img src="IMG/img1.jpeg" alt="Deborath Vicioso Photo 1"></div>
-                <div class="gallery-item"><img src="IMG/img2..jpeg" alt="Deborath Vicioso Photo 2"></div>
-                <div class="gallery-item"><img src="IMG/img3..jpeg" alt="Deborath Vicioso Photo 3"></div>
-                <div class="gallery-item"><img src="IMG/img4..jpeg" alt="Deborath Vicioso Photo 4"></div>
-                <div class="gallery-item"><img src="IMG/img5..jpeg" alt="Deborath Vicioso Photo 5"></div>
-                <div class="gallery-item"><img src="IMG/img6..jpeg" alt="Deborath Vicioso Photo 6"></div>
-                <div class="gallery-item"><img src="IMG/img7..jpeg" alt="Deborath Vicioso Photo 7"></div>
-                <div class="gallery-item"><img src="IMG/img8..jpeg" alt="Deborath Vicioso Photo 8"></div>
-                <div class="gallery-item"><img src="IMG/img9..jpeg" alt="Deborath Vicioso Photo 9"></div>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <img src="IMG/img1.jpeg" alt="Deborath Vicioso Photo 1" class="carousel-slide">
+                    <img src="IMG/img2..jpeg" alt="Deborath Vicioso Photo 2" class="carousel-slide">
+                    <img src="IMG/img3..jpeg" alt="Deborath Vicioso Photo 3" class="carousel-slide">
+                    <img src="IMG/img4..jpeg" alt="Deborath Vicioso Photo 4" class="carousel-slide">
+                    <img src="IMG/img5..jpeg" alt="Deborath Vicioso Photo 5" class="carousel-slide">
+                    <img src="IMG/img6..jpeg" alt="Deborath Vicioso Photo 6" class="carousel-slide">
+                    <img src="IMG/img7..jpeg" alt="Deborath Vicioso Photo 7" class="carousel-slide">
+                    <img src="IMG/img8..jpeg" alt="Deborath Vicioso Photo 8" class="carousel-slide">
+                    <img src="IMG/img9..jpeg" alt="Deborath Vicioso Photo 9" class="carousel-slide">
+                </div>
+                <button class="carousel-btn prev" aria-label="Previous Slide">❮</button>
+                <button class="carousel-btn next" aria-label="Next Slide">❯</button>
+                <div class="carousel-indicators"></div>
             </div>
         </div>
     </section>
@@ -759,6 +891,105 @@
         </div>
     </footer>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const track = document.querySelector('.carousel-track');
+            const slides = Array.from(document.querySelectorAll('.carousel-slide'));
+            const nextButton = document.querySelector('.carousel-btn.next');
+            const prevButton = document.querySelector('.carousel-btn.prev');
+            const indicatorsContainer = document.querySelector('.carousel-indicators');
+
+            if (!track || slides.length === 0) return;
+
+            // Create indicators
+            slides.forEach((_, index) => {
+                const indicator = document.createElement('div');
+                indicator.classList.add('indicator');
+                if (index === 0) indicator.classList.add('active');
+                indicator.addEventListener('click', () => {
+                    stopAutoPlay();
+                    moveToSlide(index);
+                    startAutoPlay();
+                });
+                indicatorsContainer.appendChild(indicator);
+            });
+
+            const indicatorDots = Array.from(indicatorsContainer.children);
+            let currentIndex = 0;
+            let autoPlayInterval;
+
+            function updateSlidePosition() {
+                track.style.transform = 'translateX(-' + (currentIndex * 100) + '%)';
+            }
+
+            function updateIndicators(index) {
+                indicatorDots.forEach(dot => dot.classList.remove('active'));
+                if (indicatorDots[index]) {
+                    indicatorDots[index].classList.add('active');
+                }
+            }
+
+            function moveToSlide(index) {
+                currentIndex = index;
+                updateSlidePosition();
+                updateIndicators(currentIndex);
+            }
+
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % slides.length;
+                moveToSlide(currentIndex);
+            }
+
+            function prevSlide() {
+                currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                moveToSlide(currentIndex);
+            }
+
+            nextButton.addEventListener('click', () => {
+                stopAutoPlay();
+                nextSlide();
+                startAutoPlay();
+            });
+
+            prevButton.addEventListener('click', () => {
+                stopAutoPlay();
+                prevSlide();
+                startAutoPlay();
+            });
+
+            function startAutoPlay() {
+                stopAutoPlay(); // Prevent multiple intervals
+                autoPlayInterval = setInterval(nextSlide, 5000);
+            }
+
+            function stopAutoPlay() {
+                clearInterval(autoPlayInterval);
+            }
+
+            // Start auto play
+            startAutoPlay();
+
+            // Touch support for swipe
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            track.addEventListener('touchstart', e => {
+                touchStartX = e.changedTouches[0].screenX;
+                stopAutoPlay();
+            }, { passive: true });
+
+            track.addEventListener('touchend', e => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+                startAutoPlay();
+            }, { passive: true });
+
+            function handleSwipe() {
+                if (touchEndX < touchStartX - 50) nextSlide();
+                if (touchEndX > touchStartX + 50) prevSlide();
+            }
+        });
+    </script>
 </body>
 
 </html>
